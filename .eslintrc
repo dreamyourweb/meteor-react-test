@@ -1,0 +1,91 @@
+env: 
+    browser: true
+    node: true
+
+ecmaFeatures:
+    jsx: true
+
+rules:
+    no-new-object: 2
+    no-reserved-keys: 2
+    no-array-constructor: 2
+    quotes: [2, double"]
+    indent: [2, 4]
+    no-multi-str: 2
+    no-multi-spaces: 2
+    no-shadow-restricted-names: 2
+    dot-notation: 2
+    block-scoped-var: 2
+    vars-on-top: 2
+    no-unused-vars: 1
+    eqeqeq: 2
+    use-isnan: 2
+    no-eq-null: 2
+    brace-style: 2
+    spaced-line-comment: 2
+    valid-jsdoc: 2
+    space-infix-ops: 2
+    eol-last: 0
+    padded-blocks: [2, "never"]
+    space-before-blocks: 2
+    comma-dangle: [2, "never"]
+    comma-style: 2
+    semi: [2, always]
+    semi-spacing: 2
+    no-extra-boolean-cast: 2
+    space-before-function-paren: [2, "never"]
+    no-spaced-func: 2
+    no-wrap-func: 2
+    one-var: [2, "never"]
+    camelcase: 2
+    new-cap: 2
+    consistent-this: [1, "_this"]
+    func-names: 0
+    key-spacing: 2
+    no-dupe-keys: 2
+    strict: 0
+    no-underscore-dangle: 0
+
+globals:
+    Meteor: false
+    DDP: false
+    Mongo: false
+    Session: false
+    Accounts: false
+    Template: false
+    Blaze: false
+    UI: false
+    Match: false
+    check: false
+    Tracker: false
+    Deps: false
+    ReactiveVar: false
+    EJSON: false
+    HTTP: false
+    Email: false
+    Assets: false
+    Handlebars: false
+    Package: false
+    App: false #mobile-config.js
+
+    # Meteor internals
+    DDPServer: false
+    global: false
+    Log: false
+    MongoInternals: false
+    process: false
+    WebApp: false
+    WebAppInternals: false
+
+    # globals useful when creating Meteor packages
+    Npm: false
+    Tinytest: false
+
+    # common Meteor packages
+    Random: false
+    _: false # Underscore.js
+    $: false # jQuery
+    Router: false # iron-router
+    Cluster: false
+    React: false
+    ReactMeteor: false
